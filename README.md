@@ -230,13 +230,13 @@ void SJF(PRO &PC, int n)
 
 ### 流程图
 
-![](E:\work\OS_Project\ex_2\flow.png)
+![](./flow.png)
 
 ## 实验结果与分析
 
 ### 结果展示与描述
 
-![](E:\work\OS_Project\ex_2\result.png)
+![](./result.png)
 
 - 输入进程数量和各进程的基本信息：到达时间和服务时间
 - 选择算法    注：在选择0之前需要将1和2都选择过

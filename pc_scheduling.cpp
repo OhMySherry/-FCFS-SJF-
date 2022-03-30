@@ -162,6 +162,7 @@ void SJF(PRO &PC, int n)
         PC[x] = PC[tmin];
         PC[tmin] = temp;
         End += PC[x].ServiceTime;
+        tmin = x + 1; // 重置tmin为当前等待队列中的首位索引
     }
     CountTime(PC, n, 2);   // 计算各项时间
     display_status(PC, n); // 模拟整个调度过程，输出每个时刻的进程运行状态

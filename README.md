@@ -230,13 +230,13 @@ void SJF(PRO &PC, int n)
 
 ### 流程图
 
-![](./flow.png)
+![](https://s2.loli.net/2022/03/24/mIsGlcp12eyw5gM.png)
 
 ## 实验结果与分析
 
 ### 结果展示与描述
 
-![](./result.png)
+![](https://s2.loli.net/2022/03/24/AIXwD2H3CMZvpmK.png)
 
 - 输入进程数量和各进程的基本信息：到达时间和服务时间
 - 选择算法    注：在选择0之前需要将1和2都选择过
@@ -426,6 +426,7 @@ void SJF(PRO &PC, int n)
         PC[x] = PC[tmin];
         PC[tmin] = temp;
         End += PC[x].ServiceTime;
+        tmin = x + 1; // 重置tmin为当前等待队列中的首位索引
     }
     CountTime(PC, n, 2);   // 计算各项时间
     display_status(PC, n); // 模拟整个调度过程，输出每个时刻的进程运行状态
